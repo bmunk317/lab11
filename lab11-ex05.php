@@ -11,12 +11,26 @@
 $thumbnail = "120010.jpg";
 $title = "Portrait of Eleanor of Toledo";
 
-$year = 1500;
 $era = "15th Century";  
 
+$year = 1850;
+if ($year < 1500) {
+ $era = "Early times";
+} else if ($year >= 1500 && $year < 1600) {
+ $era = "16th Century";
+} else if ($year >= 1600 && $year < 1700) {
+ $era = "17th Century";
+} else if ($year >= 1700 && $year < 1800) {
+ $era = "18th Century";
+} else {
+ $era = "Modern times";
+}
+
+$img = "<img src='images/$thumbnail' alt='$title' title='$title' />";
      
 ?> 
 
+<?php echo $img; ?>
 <h2><?php echo $era; ?></h2>
 
 

@@ -1,3 +1,6 @@
+<?php
+include 'lab11-ex07.inc.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,31 +17,15 @@
             <h2>Calgary</h2>
             <h4>Temp</h4>
             <h4>Wind</h4>
+            <?php
+
+             generateWeatherRow("October 8", "sun", 73.4, 1.2);
+             generateWeatherRow("October 9", "snowflake", -9.4, 26.6);
+             generateWeatherRow("October 10", "snowflake", 17.6, 4.4);
+             generateWeatherRow("October 11", "cloud", 37.4, 15.3);
+             generateWeatherRow("October 12", "sun", 55.4, 1.9);
             
-            <div>October 8</div>
-            <div><i class='fas fa-sun'></i></div>
-            <div><span>23.0°C | 73.4°F</span></div>
-            <div>2.0 kmh | 1.2 mph</div>  
-            
-            <div>October 9</div>
-            <div><i class='fas fa-snowflake'></i></div>
-            <div><span>-23.0°C | -9.4°F</span></div>
-            <div>42.8 kmh | 26.6 mph</div>            
-            
-            <div>October 10</div>
-            <div><i class='fas fa-snowflake'></i></div>
-            <div><span>-8.0°C | 17.6°F</span></div>
-            <div>7.1 kmh | 4.4 mph</div>
-            
-            <div>October 11</div>
-            <div><i class='fas fa-cloud'></i></div>
-            <div><span>3.0°C | 37.4°F</span></div>
-            <div>24.6 kmh | 15.3 mph</div>
-            
-            <div>October 12</div>
-            <div><i class='fas fa-sun'></i></div>
-            <div><span>13.0°C | 55.4°F</span></div>
-            <div>3.0 kmh | 1.9 mph</div>            
+             ?>     
         </div>
     </article>      
 </main>    
